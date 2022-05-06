@@ -1,6 +1,9 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
+#include <algorithm>
+
 using namespace std;
 
 #include "expression.h"
@@ -11,13 +14,31 @@ using namespace std;
 SymbolTable symbolTable;
 
 void parseAssignments();
+string removeSpaces(string s);
 
 int main()
 {
     Expression* expression;
     char paren, comma;
-    cout << "Enter expression: ";
-    cin >> paren;
+    string line; //needed for file read
+    //cout << "Enter expression: ";
+    
+    //Adding file open line
+    ifstream myfile("C:\\Users\\pjcen\\OneDrive\\Documents\\VS2022 Workspace\\testFile.txt");
+    cout << "Opened file: C:\\Users\\pjcen\\OneDrive\\Documents\\VS2022 Workspace\\testFile.txt" << endl;
+    while (getline(myfile, line))
+    {
+        line = removeSpaces(line);
+        if (line[0] == '(')
+        {
+            line[0] >> paren;
+            line.erase(0, 1);
+            expression = SubExpression::parse();
+            //cout << line << endl;
+        }
+    }
+    
+    //cin >> paren;
     expression = SubExpression::parse();
     cin >> comma;
     parseAssignments();
@@ -36,4 +57,10 @@ void parseAssignments()
         cin >> ws >> assignop >> value >> delimiter;
         symbolTable.insert(variable, value);
     } while (delimiter == ',');
+}
+
+string removeSpaces(string s)
+{
+    s.erase(remove(s.begin(), s.end(), ' '), s.end());
+    return s;
 }
