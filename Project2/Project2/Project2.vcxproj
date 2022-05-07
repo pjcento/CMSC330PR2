@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src2\and.h" />
+    <ClInclude Include="src2\conditional.h" />
     <ClInclude Include="src2\divide.h" />
     <ClInclude Include="src2\equals.h" />
     <ClInclude Include="src2\expression.h" />

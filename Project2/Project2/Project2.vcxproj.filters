@@ -83,6 +83,9 @@
     <ClInclude Include="src2\not.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src2\conditional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\testFile.txt" />

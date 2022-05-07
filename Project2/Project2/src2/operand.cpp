@@ -1,3 +1,7 @@
+//CMSC 330 Section 7381 Project 2
+//Basis was taken from Module 3 "An Expression Interpreter" class
+//Modified by Patric Centorbi on May 10, 2022
+//Class that implements operand objects
 #include <cctype>
 #include <iostream>
 #include <list>
