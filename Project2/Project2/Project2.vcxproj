@@ -147,11 +147,16 @@
     <ClCompile Include="src2\variable.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src2\and.h" />
     <ClInclude Include="src2\divide.h" />
+    <ClInclude Include="src2\equals.h" />
     <ClInclude Include="src2\expression.h" />
+    <ClInclude Include="src2\greater.h" />
     <ClInclude Include="src2\literal.h" />
     <ClInclude Include="src2\minus.h" />
+    <ClInclude Include="src2\not.h" />
     <ClInclude Include="src2\operand.h" />
+    <ClInclude Include="src2\or.h" />
     <ClInclude Include="src2\parse.h" />
     <ClInclude Include="src2\plus.h" />
     <ClInclude Include="src2\subexpression.h" />

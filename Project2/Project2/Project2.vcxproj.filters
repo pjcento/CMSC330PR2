@@ -68,6 +68,21 @@
     <ClInclude Include="src2\variable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src2\greater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src2\equals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src2\and.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src2\or.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src2\not.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\testFile.txt" />
