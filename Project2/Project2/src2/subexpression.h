@@ -9,7 +9,7 @@ public:
     
     //Definition for overridden constructor to support 3 operands
     SubExpression(Expression* left, Expression* right, Expression* condition);
-    static Expression* parse();
+    static Expression* parse(stringstream &s);
 protected:
     Expression* left;
     Expression* right;

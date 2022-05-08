@@ -6,6 +6,7 @@
 #include <iostream>
 #include <list>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -16,24 +17,24 @@ using namespace std;
 #include "literal.h"
 #include "parse.h"
 
-Expression* Operand::parse()
+Expression* Operand::parse(stringstream& s)
 {
     char paren;
     int value;
 
-    cin >> ws;
-    if (isdigit(cin.peek()))
+    s >> ws;
+    if (isdigit(s.peek()))
     {
-        cin >> value;
+        s >> value;
         Expression* literal = new Literal(value);
         return literal;
     }
-    if (cin.peek() == '(')
+    if (s.peek() == '(')
     {
-        cin >> paren;
-        return SubExpression::parse();
+        s >> paren;
+        return SubExpression::parse(s);
     }
     else
-        return new Variable(parseName());
+        return new Variable(parseName(s));
     return 0;
 }

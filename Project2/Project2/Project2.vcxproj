@@ -165,9 +165,6 @@
     <ClInclude Include="src2\times.h" />
     <ClInclude Include="src2\variable.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\testFile.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
