@@ -86,5 +86,8 @@
     <ClInclude Include="src2\conditional.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src2\less.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

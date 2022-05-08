@@ -153,6 +153,7 @@
     <ClInclude Include="src2\equals.h" />
     <ClInclude Include="src2\expression.h" />
     <ClInclude Include="src2\greater.h" />
+    <ClInclude Include="src2\less.h" />
     <ClInclude Include="src2\literal.h" />
     <ClInclude Include="src2\minus.h" />
     <ClInclude Include="src2\not.h" />
