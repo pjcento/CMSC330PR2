@@ -1,7 +1,8 @@
 //CMSC 330 Section 7381 Project 2
 //Basis was taken from Module 3 "An Expression Interpreter"
-//Modified by Patric Centorbi on May 10, 2022
+//Modified by Patric Centorbi on May 8, 2022.
 //Implements the symbol table that contains variable assignment values
+//This class was not modified from the original example.
 #include <string> 
 #include <vector> 
 using namespace std;

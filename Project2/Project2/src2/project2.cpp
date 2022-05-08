@@ -1,8 +1,8 @@
 //CMSC 330 Section 7381 Project 2
 //Basis was taken from Module 3 "An Expression Interpreter"
-//Modified by Patric Centorbi on May 10, 2022
+//Modified by Patric Centorbi on May 8, 2022.
 //Contains main class and function to parse variable assignments
-//Modified all instances of cin from project to be stringstream, passing as reference to outside classes
+//Modified all instances of cin from project to be stringstream, passing as reference to outside classes.
 #include <iostream>
 #include <fstream>
 #include <string>

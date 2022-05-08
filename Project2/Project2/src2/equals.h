@@ -1,6 +1,6 @@
 //CMSC 330 Section 7381 Project 2
 //Basis was taken from Module 3 "An Expression Interpreter"
-//Modified by Patric Centorbi on May 10, 2022
+//Modified by Patric Centorbi on May 8, 2022.
 //Defines the class used to process equality comparisons. Based on the provided "Plus" class.
 class Equals : public SubExpression
 {
