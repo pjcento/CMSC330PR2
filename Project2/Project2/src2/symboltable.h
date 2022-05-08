@@ -7,6 +7,7 @@ class SymbolTable
 public:
     SymbolTable() {}
     void insert(string variable, int value);
+    void clear() { elements.clear(); }; //Simple inline function to clear symbol table after each line
     int lookUp(string variable) const;
 private:
     struct Symbol

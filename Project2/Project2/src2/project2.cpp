@@ -37,7 +37,8 @@ int main()
         expression = SubExpression::parse(expr);
         expr >> comma;
         parseAssignments(expr);
-        cout << "Expression: " << line << " Value = " << expression->evaluate() << endl;
+        cout << "Expression: " << line << "\nValue = " << expression->evaluate() << endl;
+        symbolTable.clear();
     }
     infile.close();
     return 0;
